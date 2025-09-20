@@ -1,0 +1,38 @@
+# Arduino Smart Car with Obstacle Detection 🚗🔊
+
+This project demonstrates an Arduino-based car system that can be controlled using serial commands.  
+The car moves **forward, backward, or stops** based on the input received from the Serial Monitor.  
+Additionally, it uses an **ultrasonic sensor** to detect obstacles within 100 cm. If an obstacle is detected,  
+the motors stop and a **buzzer alarm** is triggered, while a message is displayed on the LCD.
+
+## ✨ Features
+- Control car using Serial commands:
+  - `forward` → Moves car forward
+  - `backward` → Moves car backward
+  - `stop` → Stops the car
+- **Ultrasonic sensor** detects obstacles within 100 cm
+- **Buzzer alert** when obstacle is detected
+- **16x2 I2C LCD** for status messages (moving forward, backward, stopped, obstacle detected)
+
+## 🛠️ Components Used
+- Arduino Uno
+- Ultrasonic Sensor (HC-SR04)
+- DC Motors with L298N Motor Driver
+- 16x2 I2C LCD
+- Buzzer
+- Wires, Breadboard, Power supply
+
+## 📜 How it Works
+1. Open the Arduino Serial Monitor and enter commands (`forward`, `backward`, `stop`).
+2. The car will move in the desired direction using DC motors.
+3. Ultrasonic sensor continuously measures distance.
+4. If an obstacle is detected within 100 cm:
+   - Motors stop immediately
+   - Buzzer sounds
+   - LCD displays "OBSTACLE HERE!!"
+
+## 🚀 Future Improvements
+- Add Bluetooth or Wi-Fi control instead of Serial Monitor.
+- Use sensors for automatic obstacle avoidance.
+- Add camera module for vision-based navigation.
+
